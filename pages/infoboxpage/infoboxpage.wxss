@@ -1,0 +1,99 @@
+/* pages/infoboxpage/infoboxpage.wxss */
+
+.contain{
+
+display: flex;
+flex-direction: column;
+
+
+}
+/* 顶部导航栏 */
+
+.swiper-tab {
+ 
+display: flex;
+ 
+flex-direction: row;
+ 
+line-height: 80rpx;
+ 
+border-bottom: 2rpx solid #777;
+ 
+}
+ 
+ 
+.tab-item {
+ 
+width: 50%;
+ 
+text-align: center; 
+ 
+font-size: 15px;
+ 
+color: #777;
+ 
+}
+ 
+ 
+.swiper {
+ 
+height: 1100px;
+ 
+background: #ffffff;
+ 
+}
+ 
+ 
+.on {
+ 
+color: #19CAAD;
+ 
+border-bottom: 5rpx solid #19CAAD;
+ 
+}
+.mes2{
+  width: 100%;
+margin-top: 20rpx;
+display: flex;
+flex-direction: column;
+
+
+}
+.title
+{
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx;
+}
+
+
+.t-c{
+
+  margin-left: 10rpx;
+}
+.but1{
+font-size: 39rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;}
+
+.line{
+  margin-top: 10rpx;
+  margin-left: 2.5%;
+width:95%;
+
+height:4rpx;
+
+background:#BEEDC7;
+
+}
+.but1{
+
+border-radius: 0rpx;
+position: fixed;
+bottom: 0;
+
+
+}

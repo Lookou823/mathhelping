@@ -1,0 +1,31 @@
+<view class="main">
+
+    <view class="categroy-left">
+        <view wx:for="{{knowledgeList}}" wx:key="index" data-id="{{item.titleid}}" data-index="{{index}}"
+            bindtap="switchTab"
+            class="cate-list {{curIndex === index?'on':''}}">{{item.title}}
+                                          <view class="line">
+                                        </view>
+      </view>
+
+    </view>
+
+           
+
+
+    <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="false">
+       
+
+    <import src="/pages/template/template.wxml" />
+
+        <block wx:for = "{{knowledgeList}}" wx:for-item = 'item' >
+　　　　        <template is='knowpoint'  data="{{item}}"/>
+
+
+
+          </block>
+
+
+    </scroll-view>
+
+</view>

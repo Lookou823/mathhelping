@@ -1,0 +1,37 @@
+<!--pages/schoolpage/schoolpage.wxml-->
+    <import src="/pages/template/template.wxml" />
+<view class="head">
+
+        <block wx:for = "{{schoollist}}" wx:for-item = 'item' >
+        <view class="headitem">
+        　　　　        <template is='avatorlist'  data="{{item}}"/>
+
+
+        </view>
+
+        </block>
+
+</view>
+
+<view class="person">
+
+<image class="body"  src="{{schoollist[track].menimg}}" mode="aspectFill"></image>
+
+
+
+</view>
+
+
+<!-- 收藏按钮 -->
+<view class="icon" bindtap="sendRequire">
+  <image src="{{img}}"></image>
+</view>
+
+<view class="chatroom">
+<text class="slogan1">{{schoollist[track].schoolname}}</text>
+<textarea class="t-cont" placeholder="没有文字内容就看图片" disabled="true" auto-height="true" value="{{schoollist[track].intro}}"  auto-height="true"	 maxlength="-1"></textarea>
+                          <!-- 自动高度+不限制内容 -->
+                       
+<image class="contentimg" src="{{schoollist[track].bookimg}}"  data-id="{{schoollist[track].bookimg}}" bindtap="showImgup"  mode="widthFix"></image>
+
+</view>

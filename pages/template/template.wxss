@@ -1,0 +1,74 @@
+.content-list{
+ display: flex;
+ flex-direction: column;
+  height: 100%;
+}
+
+
+
+.cate-box{
+    height: 100%;
+    padding:40rpx;
+    box-sizing: border-box;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 270rpx;
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:10rpx 0 5rpx;
+    text-align: center;
+    color: #8CC7B5;
+    font-size: 28rpx;
+}
+.cate-title::before{
+    position: absolute;
+    left: 40rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #8CC7B5;
+}
+.cate-title::after{
+    position: absolute;
+    right: 40rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #8CC7B5;
+}
+
+
+/* wenzi */
+
+
+.t-cont
+{
+white-space: pre-wrap;
+  width: 100%;
+/* text-overflow: wrap; */
+
+}
+
+.img
+{
+
+  width: 450rpx;
+}
+
+
+/* 院校模板 */
+
+.avatar2{
+  margin-top: 20rpx;
+  width: 115rpx;
+  height: 115rpx;
+  border-radius: 115rpx;
+  border: 12rpx solid  #79AFCA;
+}

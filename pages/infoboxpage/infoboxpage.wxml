@@ -1,0 +1,77 @@
+<!--pages/infoboxpage/infoboxpage.wxml-->
+<view class="contain">
+
+
+ <!--顶部导航栏-->
+              
+              <view class="swiper-tab" >
+              <!-- <text class="slogan">不务正业的小程序，暂时当记事本</text> -->
+
+              <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">学习讨论区</view>
+              
+              <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">生活讨论区</view>
+              
+              </view>
+              <!-- 导航栏分页界面 -->
+
+              <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+              
+              <swiper-item>
+                          <view class="mes2">
+                                  <text class="title">高数问题：\n</text><textarea class="t-c" placeholder="更新一下吧" auto-height="true" bindinput="setgs" value="{{study.gs}}"></textarea>
+                                  </view>
+                                  <view class="line"></view>
+
+                    <view class="mes2">
+                              <text class="title">线代问题：\n</text><textarea class="t-c" placeholder="更新一下吧" auto-height="true" bindinput="setxd" value="{{study.xd}}"></textarea>
+                                  </view>
+                                  <view class="line"></view>
+                    <view class="mes2">
+
+                      <text class="title">概率论问题：\n</text><textarea class="t-c" placeholder="更新一下吧" auto-height="true" bindinput="setgll" value="{{study.gll}}"></textarea>
+                                  </view>
+                                  <view class="line"></view>
+                                                 <button style="width:100%" class="but1" bindtap="updateData">保存</button>
+     
+              </swiper-item>
+
+
+
+
+<!-- -----------------------------2------------------------------------------------- -->
+
+
+
+              <swiper-item>
+         <view class="mes2">
+                        <text>生活问题：</text><textarea placeholder="更新一下吧" auto-height="true" bindinput="setsh" value="{{live.sh}}"></textarea>
+                        </view>
+                        <view class="line"></view>
+
+
+         <view class="mes2">
+
+                       <text>情感问题：</text><textarea placeholder="更新一下吧" auto-height="true" bindinput="setqg" value="{{live.qg}}"></textarea>
+                        </view>
+                        <view class="line"></view>
+
+
+         <view class="mes2">
+
+                                               <text>实习问题：</text><textarea placeholder="更新一下吧" auto-height="true" bindinput="setsx" value="{{live.sx}}"></textarea>
+                        </view>
+                        <view class="line"></view>
+
+                                                 <button style="width:100%" class="but1" bindtap="updateData2">保存</button>
+
+              </swiper-item>
+
+
+
+
+
+              </swiper>
+
+
+
+</view>

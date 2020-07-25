@@ -1,0 +1,160 @@
+<!--pages/control/control.wxml-->
+<view class="container">
+
+
+              <!--顶部导航栏-->
+              
+              <view class="swiper-tab" >
+              <!-- <text class="slogan">不务正业的小程序，暂时当记事本</text> -->
+
+              <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">知识点管理</view>
+              
+              <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">学院信息添加</view>
+              
+              </view>
+
+
+   <!-- 导航栏分页界面 -->
+
+              <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+              
+              <swiper-item>
+                      <view class="body">
+
+                                
+                                      <view class="body-item">
+                                                <text>序号（num）:</text>
+                                                <input class="input-type" value="{{num}}" bindinput="numInput"></input>
+                                            </view>
+                                        <view class="line"></view>
+
+                                        <view class="body-item">
+                                            <text>标题（title）:</text>
+                                            <input class="input-type" value="{{title}}" bindinput="titleInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+
+                                
+                                  <view class="body-item">
+                                            <text>标题序号（titleid）:</text>
+                                            <input class="input-type" value="{{titleid}}" bindinput="titleidInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+                                
+
+
+
+                                  <view class="body-item">
+                                            <text>文字内容:</text>
+                                            <input class="input-type" maxlength="-1" value="{{textcontent}}" bindinput="tcInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+
+
+
+                                  <view class="body-item">
+                                            <text>图片链接:</text>
+                                            <input class="input-type" maxlength="-1" value="{{imgcontent}}" bindinput="icInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+
+                                
+                                </view>
+
+
+                        <view class="button-group">
+                                <button class="bt1" bindtap="adddata">添加</button>
+                                <button class="bt1" bindtap="clearData">清空</button>
+
+
+                              </view>
+
+
+
+                            <view class="body">
+
+  <view class="body-item">
+                                            <text>序号(id):</text>
+                                            <input class="input-type" value="{{id}}" maxlength="-1" bindinput="idInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+                             <button style="width:100%" class="bt2" bindtap="delete">删除</button>
+                            </view>
+                            </swiper-item>
+<!--  -------------------2-------------------------------------- -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+    <swiper-item>
+
+                      <view class="body">
+
+                                
+                                      <view class="body-item">
+                                                <text>序号（num）:</text>
+                                                <input class="input-type" value="{{num2}}" bindinput="num2Input"></input>
+                                            </view>
+                                        <view class="line"></view>
+
+                                        <view class="body-item">
+                                            <text>校名（scn）:</text>
+                                            <input class="input-type" value="{{schoolname}}" bindinput="scnInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+
+                                
+                                  <view class="body-item">
+                                            <text>介绍（intro）:</text>
+                                            <input class="input-type" value="{{intro}}" bindinput="introInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+                                
+
+
+
+                                  <view class="body-item">
+                                            <text>校徽（himg）:</text>
+                                            <input class="input-type" maxlength="-1" value="{{headimg}}" bindinput="hiInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+
+
+
+                                  <view class="body-item">
+                                            <text>专业（bimg）:</text>
+                                            <input class="input-type" maxlength="-1" value="{{bookimg}}" bindinput="biInput"></input>
+                                        </view>
+                                        <view class="line"></view>
+
+                                
+                                </view>
+
+
+                        <view class="button-group">
+                                <button class="bt1" bindtap="adddata2">添加</button>
+                                <button class="bt1" bindtap="clearData2">清空</button>
+
+
+                              </view>
+
+                            </swiper-item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
+     </swiper>
+                            <!-- <swiper-item> -->
+
+                            
+</view>

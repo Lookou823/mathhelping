@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+
+"imgup": "../component/imgup/imgup"
+
+
+  },
+    "navigationBarTitleText": "知识点",
+        "navigationBarTextStyle": "white"
+}

@@ -1,0 +1,45 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+        <view class="header">
+          <text>用户登录</text>
+        
+        </view>
+
+          <view class="body">
+
+          
+                <view class="body-item">
+                          <text>用户名:</text>
+                          <input class="input-type" value="{{id}}" bindinput="idInput"></input>
+                      </view>
+                  <view class="line"></view>
+
+                  <view class="body-item">
+                      <text>密码:</text>
+                      <input class="input-type" value="{{password}}" bindinput="passwordInput"></input>
+                  </view>
+                  <view class="line"></view>
+
+          
+          
+          
+          
+          </view>
+
+
+        <view class="button-group">
+          <button class="bt1" bindtap="checklogin">登录</button>
+          <button class="bt1" bindtap="clearData">清空</button>
+
+
+        </view>
+
+
+          <view class="button-group2">
+
+                  <button style="width:100%" class="bt2" bindtap="gotoEn" >没有账号,前往注册</button>
+          </view>
+
+
+
+</view>

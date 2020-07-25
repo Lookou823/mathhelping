@@ -1,0 +1,103 @@
+/* pages/control/control.wxss */
+.container{
+
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+.body{
+/* margin-top: 40rpx; */
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+
+}
+
+
+.body-item{
+font-size: 36rpx;
+margin-top: 60rpx;
+  display: flex;
+flex-direction: row;
+}
+
+.line{
+  width: 100%;
+  height: 2rpx;
+  background: rgb(211, 211, 211);
+  margin-top: 20rpx;
+
+}
+
+.button-group{
+width: 100%;
+margin-top:80rpx; 
+display: flex;
+flex-direction: row;
+
+
+}
+/* 顶部导航栏 */
+
+.swiper-tab {
+
+margin-top: -200rpx;
+
+width: 100%;
+ 
+display: flex;
+ 
+flex-direction: row;
+ 
+line-height: 80rpx;
+ 
+border-bottom: 2rpx solid #777;
+ 
+}
+ 
+ 
+.tab-item {
+ 
+width: 50%;
+ 
+text-align: center;
+ 
+font-size: 15px;
+ 
+color: #777;
+ 
+}
+ 
+ 
+.swiper {
+ 
+height: 1100px;
+ width: 100%;
+background: white;
+ 
+}
+ 
+ 
+.on {
+ 
+color: #19CAAD;
+ 
+border-bottom: 5rpx solid #19CAAD;
+ 
+}
+
+
+.bt2{
+
+margin-top: 20rpx;
+
+}
+
+.input-type{
+
+width: 80%;
+
+}

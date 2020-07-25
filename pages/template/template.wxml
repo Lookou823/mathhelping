@@ -1,0 +1,67 @@
+
+<!-- 知识点页面的模板 -->
+<template name="knowpoint">
+<scroll-view scroll-y="true" class="content-list">
+            <view id="{{item.titleid}}" class="cate-box" data-id="{{item.num}}" >
+
+                          <view class="cate-banner">
+                                              <image src="https://math-1300314777.cos.ap-nanjing.myqcloud.com/backimg/back.jpg"
+                          mode="aspectFit"></image>
+                          </view>
+
+                       
+
+
+                          <view class="textcontent">
+                                <view class="cate-title">
+
+                                      <text>文字内容：</text>
+                                
+                                </view>
+
+                          <textarea class="t-cont" placeholder="没有文字内容就看图片" disabled="true" auto-height="true" value="{{item.textcontent}}"  auto-height="true"	 maxlength="-1"></textarea>
+                          <!-- 自动高度+不限制内容 -->
+                          </view>
+
+
+                            <view class="cate-title">
+
+                                <text>图片内容：</text>
+                          
+                            </view>
+
+
+                          <view class="imgcontent" bindtap="showImgup" data-id="{{item.imgcontent}}">
+                              <image   class="img" src="{{item.imgcontent}}" mode="aspectFit" ></image>
+                          
+                          </view>
+            
+
+
+
+
+            
+            
+            </view>
+
+
+</scroll-view>
+
+
+<!-- 院校信息的模板 -->
+
+<template name="avatorlist">
+
+ <view class="author2">
+      <image src="{{item.headimg}}" class="avatar2" mode="aspectFill" bindtap="reflash" data-id ="{{item.num}}"></image>     
+  </view>
+
+
+</template>
+
+
+
+
+</template>
+
+

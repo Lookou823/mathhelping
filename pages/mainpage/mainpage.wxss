@@ -1,0 +1,106 @@
+@import '/pages/template/template.wxss';
+
+page,.main{
+  display: flex;
+  flex-direction: row;
+     height: 100%;
+}
+.categroy-left{
+    float: left;
+    width: 220rpx;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    /* 实现左右分开滚动 */
+      overflow-y:auto; 
+
+}
+.line{
+  width: 200rpx;
+  height: 2rpx;
+  background: rgb(211, 211, 211);
+
+}
+
+.categroy-left .cate-list{
+    font-size: 28rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    border-left: 3px solid #fff;
+}
+.categroy-left .cate-list.on{
+      font-size: 32rpx;
+
+    color: #8CC7B5;
+    border-color: #8CC7B5;
+}
+.categroy-right{
+
+    float: right;
+    width: 530rpx;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.cate-box{
+    height: 100%;
+    padding:40rpx;
+    box-sizing: border-box;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 270rpx;
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:30rpx 0 55rpx;
+    text-align: center;
+    color: #8CC7B5;
+    font-size: 28rpx;
+}
+.cate-title::before{
+    position: absolute;
+    left: 40rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #8CC7B5;
+}
+.cate-title::after{
+    position: absolute;
+    right: 40rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: #8CC7B5;
+}
+
+.product-list{
+    display: inline-block;
+    width: 130rpx;
+    height: 130rpx;
+    text-align: center;
+    margin:0 20rpx 20rpx 0;
+    font-size: 24rpx;
+}
+.product-list image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 20rpx;
+}
+.product-list:nth-child(3n){
+    margin-right: 0;
+}
+
+
+
+.content-list{
+
+  height: 100%;
+}

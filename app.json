@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/mainpage/mainpage",
+    "pages/schoolpage/schoolpage",
+    "pages/infoboxpage/infoboxpage",
+    "pages/enroll/enroll",
+    "pages/control/control"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#BEE7E9",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#19CAAD",
+    "borderStyle": "white",
+    "backgroundColor": "#BEE7E9",
+    "list": [
+      {
+        "pagePath": "pages/mainpage/mainpage",
+        "iconPath": "icon/zhishidian (4).png",
+        "selectedIconPath": "icon/zhishidian (2).png",
+        "text": "知识点"
+      },
+      {
+        "pagePath": "pages/schoolpage/schoolpage",
+        "iconPath": "icon/xuexiaoqingkuang (4).png",
+        "selectedIconPath": "icon/xuexiaoqingkuang (2).png",
+        "text": "院校信息"
+      },
+      {
+        "pagePath": "pages/infoboxpage/infoboxpage",
+        "iconPath": "icon/liuyanban-05 (4).png",
+        "selectedIconPath": "icon/liuyanban-05 (2).png",
+        "text": "留言板"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
